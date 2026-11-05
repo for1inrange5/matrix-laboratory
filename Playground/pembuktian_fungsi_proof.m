@@ -8,9 +8,11 @@ fcn = @(j) j.^2 + j + 41;
 proof = fcn(n);
 
 % Fungsi cek genap
-isEven = @(x) mod(x, 2) == 0;
+isEven = @(x) mod(x, 2) == 0; 
 genap = isEven(proof);
 
 % Tampilkan dalam bentuk tabel biar gampang dibaca
 T = table(n, proof, genap, 'VariableNames', {'n', 'Hasil_fcn', 'Apakah_Genap'});
 disp(T)
+
+save Variabels/proof.mat

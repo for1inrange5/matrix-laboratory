@@ -1,5 +1,5 @@
 % Ubah n dari 40 turun ke 0 (menggunakan langkah -1)
-n = (41:-1:0)';
+n = (39:-1:0)';
 
 % Fungsi rumus Euler polynomial
 fcn = @(j) j.^2 + j + 41;
@@ -14,3 +14,5 @@ genap = isEven(proof);
 % Tampilkan dalam bentuk tabel biar gampang dibaca
 T = table(n, proof, genap, 'VariableNames', {'n', 'Hasil_fcn', 'Apakah_Genap'});
 disp(T)
+
+savefile proof.mat
